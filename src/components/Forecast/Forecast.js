@@ -37,7 +37,7 @@ function getForecast(e) {
         if (response.cod !== 200) {
             throw new Error()
         }
-
+        console.log(response)
         setResponseObj(response);
         setLoading(false);
     })
@@ -81,7 +81,7 @@ function getForecast(e) {
                     Celcius
                 </label>
 
-                <button className={classes.Button} type="submit">Get Forecast</button>
+                <button className={classes.Button} type="submit">Get Weather</button>
             </form>
             <Conditions
                responseObj={responseObj}
