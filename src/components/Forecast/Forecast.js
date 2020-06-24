@@ -50,7 +50,7 @@ function getForecast(e) {
 
     return (
         <div>
-            <h2>Find Current Weather Conditions</h2>
+            <h2>Search for Current Weather Conditions in Your City!</h2>
             <form onSubmit={getForecast}>
                 <input
                     type="text"
